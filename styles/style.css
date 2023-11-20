@@ -1,0 +1,75 @@
+*{
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+section{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+}
+#conteiner{
+    width: 250px;
+    height: 270px;
+    background-color: whitesmoke;
+    display:flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgb(0, 0, 0, .5);  
+}
+
+#btn_login{
+    background-color: gainsboro;
+    padding: 6px;
+    border-radius: 4.9px;
+    cursor: pointer;
+    backdrop-filter: blur(5px);
+    transition: .4s;
+    border: none;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 40px;
+    margin: 2px;
+
+}
+
+#btn_login:hover{
+    background-color: gray;
+    color: white;
+}
+
+.elementos{
+    background-color: whitesmoke;
+    width: 100%;
+    height: 40px;
+    margin: 2px;
+    color: grey;
+    border: none;
+    outline: none;
+    text-align: center;
+    margin-top: 9px;
+    transition: .1s;
+}
+
+.elementos:active, .elementos:focus{
+    border-bottom: 2px solid gray;
+}
+
+#logo_empresa{
+    width: 55%;
+    margin-left: 22%;
+}
+
+#logo_site{
+    width: 15%;
+    cursor: pointer;
+}
+
+body{
+    overflow: hidden;
+}
