@@ -3,22 +3,11 @@ const button_historico = document.getElementById('btn_modal')
 const modal = document.querySelector('dialog')
 const button_close = document.getElementById('btn_close')
 
-fetch('../index.html')
-    .then(response => response.text())
-    .then(data => {
-       
-        document.getElementById('conteudo').innerHTML = data
+$('#conteiner').on('click', '#btn_login', () => {
+    alert('botão clicado');
+});
 
-        const login = document.getElementById('btn_login')
-
-        login.addEventListener('click',() => {
-            alert('Botão clicado!');
-           
-        });
-    })
-    .catch(error => {
-        console.error('Erro ao carregar o arquivo:', error);
-    });
+$(document).ready(console.log('foi'))
 
 
 button_close.onclick = function() {
