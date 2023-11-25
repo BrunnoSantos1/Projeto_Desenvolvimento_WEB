@@ -7,7 +7,7 @@ $('#conteiner').on('click', '#btn_login', () => {
     alert('botão clicado');
 });
 
-$(document).ready(console.log('foi'))
+
 
 
 button_close.onclick = function() {
