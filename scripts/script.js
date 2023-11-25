@@ -1,5 +1,3 @@
-
-
 const url = 'index.html'
 
 var u_id 
