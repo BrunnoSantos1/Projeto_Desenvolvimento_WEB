@@ -1,4 +1,3 @@
-require ()
 
 const url = 'index.html'
 

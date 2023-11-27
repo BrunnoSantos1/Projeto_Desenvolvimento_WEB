@@ -4,21 +4,11 @@ const modal = document.querySelector('dialog')
 const button_close = document.getElementById('btn_close')
 
 
-/*$(document).ready(function() {
- 
-    $("#btn_login").on("click", function() {
-      
-        alert("Botão de login clicado!");
-    });
-});*/
-
-
 $(document).ready(function() {
    $('#btn_login').on('click', () => {
    alert('foi')
    })
 })
-
 
 
 button_close.onclick = function() {
