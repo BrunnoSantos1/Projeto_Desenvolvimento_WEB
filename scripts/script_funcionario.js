@@ -3,10 +3,21 @@ const button_historico = document.getElementById('btn_modal')
 const modal = document.querySelector('dialog')
 const button_close = document.getElementById('btn_close')
 
-$('#conteiner').on('click', '#btn_login', () => {
-    alert('botão clicado');
-});
 
+/*$(document).ready(function() {
+ 
+    $("#btn_login").on("click", function() {
+      
+        alert("Botão de login clicado!");
+    });
+});*/
+
+
+$(document).ready(function() {
+   $('#btn_login').on('click', () => {
+   alert('foi')
+   })
+})
 
 
 
