@@ -15,7 +15,6 @@ $(document).ready(function () {
                 $('#conteiner').html(response)
                 alert('foi')
             },
-
             error: function (xhr, status, error) { 
                
                 alert('Erro ao carregar pagina')
