@@ -4,14 +4,27 @@ const modal = document.querySelector('dialog')
 const button_close = document.getElementById('btn_close')
 
 
-$(document).ready(function() {
-   $('#btn_login').on('click', () => {
-   alert('foi')
-   })
+$(document).ready(function () {
+    $('#btn_login').on('click', () => {
+
+        $.ajax({
+            url: '../index.html',
+            type:'GET',
+            dataType: 'html',
+            success: function(response) {
+                $('#conteiner').html(response)
+                alert('foi')
+            },
+
+            error: function (xhr, status, error) { 
+               
+                alert('Erro ao carregar pagina')
+            }
+        })
+    })  
 })
 
-
-button_close.onclick = function() {
+/*button_close.onclick = function() {
     modal.close()
 }
 
@@ -49,4 +62,4 @@ estado_tabela.textContent = dados.estadoCivil;
 email_tabela.textContent = dados.email;
 telefone_tabela.textContent = dados.telefone;
 sexo_tabela.textContent = dados.sexo;
-nascimento_tabela.textContent = dados.nascimento;
+nascimento_tabela.textContent = dados.nascimento;*/
