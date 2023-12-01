@@ -1,0 +1,189 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header>nav>img{
+    width: 200px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+header>nav>input{
+    width: 100px;
+    float: right;
+    height: 30px;
+    border: 2px solid #ccc;
+    background: transparent;
+    color: grey;
+    transition: .5s;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+header>nav>input:hover{
+    background-color: #ccc;
+    color: snow;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-content:flex-start;
+    width: 100%;
+}
+
+#frame{
+    background-color: whitesmoke;
+    width: 80%;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    box-shadow: 0 0 30px rgb(0, 0, 0, .5);
+}
+
+aside{
+    float: right;
+    padding: 20px;
+    width: 70%;
+    height: 300px;
+    margin-right: 2%;
+}
+article>form{
+    display: grid;
+    float: left;
+    width: 30%;
+    height: 300px;
+    background: whitesmoke;
+    padding: 20px;
+    margin-left: 1%;
+}
+
+form>img,form>input{
+    width: 200px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+#btn_func{
+    width: 270px;
+}
+
+form>input{
+    cursor: pointer;
+    padding: 6px;
+    background-color: gainsboro;
+    transition: .5s;
+    border: 3px solid whitesmoke;
+    color: black;
+    font-size: medium;
+    outline: none;
+    border-radius: 5px;
+}
+
+form>input:hover{
+    background-color: gray;
+    color: white;
+}
+
+form>img{
+    border: 3px solid #ccc;
+}   
+aside{
+    color: slategray;
+    display: flex;
+    user-select: none;
+    text-align: justify;
+}
+
+dialog{
+    border: 2px solid whitesmoke;
+    border-radius: 6px;
+    background-color: whitesmoke;
+    box-shadow: 0 0 30px rgb(0, 0, 0, .5);
+    width: 80%;
+    height: 80%;
+}
+
+.btn_close{
+    float: right;
+    width: 70px;
+    height: 25px;
+    color: black;
+    background-color: gainsboro;
+    border: gainsboro;
+    border-radius: 4px;
+    margin-bottom: 50px;
+}
+
+.btn_close:hover{
+    color: white;
+    background-color:gray;
+    border: gray;
+}
+
+dialog>nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.bar_table{
+    height: 30px;
+    max-height: 40px;
+}
+
+nav>.btn_close{
+    margin-left: 180px;
+}
+
+dialog>section{
+    height: 400px;
+}
+
+#form_cadastro{
+    display: grid;
+}
+
+#frame_cadastro{
+    display: grid;
+    justify-content: center;
+}
+
+#modal_cadastro{
+    height: 560px;
+}
+
+section>form>input{
+    text-align: center;
+}
+
+.cadastro_bar{
+    width: 300px;
+    color: white;
+}
+
+.cadastro_bar:hover, .bar_table:hover{
+    background-color: #ccc;
+}
+
+.cadastro_bar:focus, .bar_table:focus{
+    background-color: #ccc;
+}
+
+section>h1{
+    user-select: none;
+    color: slategray;
+}
+
+#btn_cadastrar{
+    width: 300px;
+}
