@@ -27,7 +27,7 @@ $(document).ready(function(){
 // })
 
 
-// AJAX PARA RETORNAR O RECEITAS PELO CLICK - PESQUISA PELO MÊS
+// AJAX PARA RETORNAR OS DADOS DO PONTO
 $(document).ready(function(){
 	var pag = "ponto";
 	$('#btn_modal').click(function(event){
