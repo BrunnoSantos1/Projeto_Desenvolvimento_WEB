@@ -14,7 +14,6 @@ if (isset($usuario)) {
 	$txtusuario = '';
 }
 
-echo "<script language='javascript'>window.alert('.$usuario.'); </script>";
 
 
 
@@ -32,7 +31,7 @@ echo '
 	<tbody>';
 
 
-		$res2 = $pdo->query("SELECT * FROM funcionarios WHERE usuario = '$txtusuario';");
+		$res2 = $pdo->query("SELECT * FROM funcionarios;");
 	
 		$dados2 = $res2->fetchAll(PDO::FETCH_ASSOC);
 	
@@ -45,7 +44,7 @@ echo '
 			
 			
 
-	$res = $pdo->query("SELECT * FROM ponto WHERE usuario = '$txtusuario';");
+	$res = $pdo->query("SELECT * FROM ponto;");
 	
 	$dados = $res->fetchAll(PDO::FETCH_ASSOC);
 

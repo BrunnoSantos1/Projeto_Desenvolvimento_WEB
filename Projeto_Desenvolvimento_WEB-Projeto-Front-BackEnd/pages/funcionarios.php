@@ -34,13 +34,11 @@
                 </form>
                 <aside id="conteiner_table">
 
-                    <!-- Conteudo virá por ajax -->
-                
-                    
+                    <!-- Conteudo virá por ajax -->              
   
                 </aside>
                 <div id="mensagem">
-
+                    <!-- Mensagem de Ponto Batido com Sucesso, virá por ajax -->
                 </div>  
             </form>
         </article>
@@ -51,9 +49,9 @@
     
         </header>
         
-    <div id="dados_historico">
-
-    </div>   
+        <div id="dados_historico">
+                    <!-- Conteudo virá por ajax -->
+        </div>   
         
     </dialog>
     <script src="../scripts/core.min.js"></script>

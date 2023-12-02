@@ -26,13 +26,13 @@ if(empty($usuario) || empty($senha)){
 
 
 		if($_SESSION['acesso_usuario'] == 'Funcionario'){
-			echo "<script language='javascript'>window.alert('Passou, Funcionario'); </script>";
+			echo "<script language='javascript'>window.alert('Seja Bem Vindo, Funcionario ".$_SESSION['login_usuario']."'); </script>";
 			echo "<script language='javascript'>window.location='pages/funcionarios.php'; </script>";
 
 		}
 
 		elseif($_SESSION['acesso_usuario'] == 'Gestor'){
-			echo "<script language='javascript'>window.alert('Passou, Gestor'); </script>";	
+			echo "<script language='javascript'>window.alert('Seja Bem Vindo, Gestor ".$_SESSION['login_usuario']."'); </script>";	
 			echo "<script language='javascript'>window.location='pages/gestor.php'; </script>";
 
 		}else{
