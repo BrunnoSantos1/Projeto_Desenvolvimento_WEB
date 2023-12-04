@@ -46,7 +46,7 @@
             <input type="button" value="Fecha" class="btn_close" onclick="fecha(1)">
         </header>
         
-        <div id="dados_historico">
+        <div id="dados_historico" class="dados_historico">
                 <!-- Conteudo virá por ajax -->
         </div>   
     </dialog>
@@ -54,14 +54,14 @@
     <dialog id="modal_funcionario">
         <nav>
             <form action="" method="get">
-                <input type="text" placeholder="Nome" name="" class="bar_table">
-                <input type="text" placeholder="Cargo" name="" class="bar_table">
-                <input type="text" placeholder="Email" name="" class="bar_table">
-                <input type="button" value="Buscar">
+                <input type="hidden" placeholder="Nome" name="" class="bar_table">
+                <input type="hidden" placeholder="Cargo" name="" class="bar_table">
+                <input type="hidden" placeholder="Email" name="" class="bar_table">
+                <input type="hidden" value="Buscar">
             </form>
             <input type="button" value="Fecha" class="btn_close" onclick="fecha(2)">
         </nav>
-        <div id="dados_historico_funcionarios">
+        <div id="dados_historico_funcionarios" class="dados_historico_funcionarios">
                 <!-- Conteudo virá por ajax -->
         </div>         
     </dialog>
@@ -82,6 +82,9 @@
                 <input type="text" placeholder="Telefone" id="telefone"  name="telefone" class="cadastro_bar">
                 <input type="text" placeholder="Sexo" id="sexo"  name="sexo" class="cadastro_bar">
                 <input type="text" placeholder="Nascimento" id="nascimento"  name="nascimento" class="cadastro_bar">
+                <input type="text" placeholder="Usuario" id="usuario"  name="usuario" class="cadastro_bar">
+                <input type="text" placeholder="Senha" id="senha"  name="senha" class="cadastro_bar">
+
                 <input type="button" value="Cadastrar"  id="btn_cadastrar">
                 
             </form>

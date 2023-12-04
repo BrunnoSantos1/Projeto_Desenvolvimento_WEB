@@ -187,3 +187,35 @@ section>h1{
 #btn_cadastrar{
     width: 300px;
 }
+
+.dados_historico {
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    margin-right: 0;
+    background: #ffffff;
+}
+
+.dados_historico_funcionarios {
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    margin-right: 0;
+    background: #ffffff;
+}
+
+.historico>table{
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+    flex-direction: row;
+    background-color: rgb(116, 116, 116);
+    font-size: 20px;
+    font-weight: normal;
+    color: #ffffff;
+}
+
+.historico>table,th{
+    border: 1px solid rgb(0, 0, 0);
+
+}

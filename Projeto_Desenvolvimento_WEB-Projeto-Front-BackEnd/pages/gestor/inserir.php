@@ -10,10 +10,11 @@ $email   = $_POST['email'];
 $telefone = $_POST['telefone'];
 $sexo = $_POST['sexo'];
 $nascimento = $_POST['nascimento'];
+$usuario = $_POST['usuario'];
+$senha = $_POST['senha'];
 
 
 
-$usuario = 'usuario';
 
 	$res = $pdo->prepare("INSERT INTO funcionarios 
 						(nome,cpf,cargo,estado_civil,email,telefone,sexo,nascimento,usuario)
@@ -34,22 +35,17 @@ $usuario = 'usuario';
 
 
 	
-	$res = $pdo->prepare("INSERT INTO funcionarios 
-						(nome,cpf,cargo,estado_civil,email,telefone,sexo,nascimento,usuario)
+	$res2 = $pdo->prepare("INSERT INTO login 
+						(usuario,senha,cargo)
 							VALUES 
-						(:nome,:cpf,:cargo,:estado_civil,:email,:telefone,:sexo,:nascimento,:usuario) ");
+						(:usuario,:senha,:cargo) ");
 
-	$res->bindValue(":nome", $nome);
-	$res->bindValue(":cpf", $cpf);
-	$res->bindValue(":cargo", $cargo);
-	$res->bindValue(":estado_civil", $estado_civil);
-	$res->bindValue(":email", $email);
-	$res->bindValue(":telefone", $telefone);
-	$res->bindValue(":sexo", $sexo);
-	$res->bindValue(":nascimento", $nascimento);
-	$res->bindValue(":usuario", $usuario);
 
-	$res->execute();
+	$res2->bindValue(":usuario", $usuario);
+	$res2->bindValue(":senha", $senha);
+	$res2->bindValue(":cargo", $cargo);
+
+	$res2->execute();
 
 	
 	

@@ -18,7 +18,7 @@ if (isset($usuario)) {
 
 
 echo '
-<table class="">
+<table class="historico">
  	<thead class="">
 		<tr>
 			<th scope="col">Usuario</th>

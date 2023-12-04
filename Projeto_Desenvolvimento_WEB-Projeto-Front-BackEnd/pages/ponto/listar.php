@@ -19,7 +19,7 @@ echo "<script language='javascript'>window.alert('.$usuario.'); </script>";
 
 
 echo '
-<table class="">
+<table class="historico">
  	<thead class="">
 		<tr>
 			<th scope="col">Usuario</th>

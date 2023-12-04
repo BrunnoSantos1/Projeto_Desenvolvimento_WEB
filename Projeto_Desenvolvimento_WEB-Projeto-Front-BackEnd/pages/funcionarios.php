@@ -49,7 +49,7 @@
     
         </header>
         
-        <div id="dados_historico">
+        <div id="dados_historico" class="dados_historico">
                     <!-- Conteudo virá por ajax -->
         </div>   
         

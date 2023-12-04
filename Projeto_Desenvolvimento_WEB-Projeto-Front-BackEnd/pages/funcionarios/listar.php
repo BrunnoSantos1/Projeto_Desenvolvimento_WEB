@@ -1,7 +1,7 @@
 <?php 
 
 require_once("../../conexao.php");
-$pagina = 'gestor';
+$pagina = 'funcionario';
 
 $usuario = @$_POST['id_user'];
 
@@ -14,10 +14,10 @@ if (isset($usuario)) {
 
 
 	if($txtusuario == '') {
-		$res = $pdo->query("SELECT * FROM funcionarios WHERE cargo = 'gestor';");
+		$res = $pdo->query("SELECT * FROM funcionarios WHERE cargo = 'funcionario';");
 
 	}elseif($txtusuario != '') {
-		$res = $pdo->query("SELECT * FROM funcionarios WHERE usuario = '$txtusuario' AND cargo = 'gestor' ;");
+		$res = $pdo->query("SELECT * FROM funcionarios WHERE usuario = '$txtusuario' AND cargo = 'funcionario' ;");
 
 	}	
 
