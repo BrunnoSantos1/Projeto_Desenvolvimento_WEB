@@ -29,8 +29,8 @@
                     <img src="../asserts/images/logo_E.png" alt="Foto" id="usuario_img">
                     <input type="button" value="Bater Ponto"  id="bater_ponto">
                     <input type="button" value="Cadastrar Funcionarios" class="btn_modal"  onclick="modal('cadastro')">
-                    <input type="button" value="Historico" class="btn_modal" id="btn_modal" onclick="modal('historico')">
-                    <input type="button" value="Mostrar Historico dos Funcionarios" class="btn_modal"  id="btn_modal_hist_func" onclick="modal()"  id="btn_func">
+                    <input type="button" value="Histórico" class="btn_modal" id="btn_modal" onclick="modal('historico')">
+                    <input type="button" value="Histórico dos Funcionários" class="btn_modal"  id="btn_modal_hist_func" onclick="modal()"  id="btn_func">
                 </form>
                 <aside id="conteiner_table">
                         <!-- Conteudo virá por ajax -->              

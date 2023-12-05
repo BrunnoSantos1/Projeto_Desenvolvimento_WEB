@@ -14,7 +14,7 @@ if (isset($usuario)) {
 	$txtusuario = '';
 }
 
-echo "<script language='javascript'>window.alert('.$usuario.'); </script>";
+//echo "<script language='javascript'>window.alert('.$usuario.'); </script>";
 
 
 

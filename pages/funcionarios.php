@@ -30,7 +30,7 @@
 
                     <img src="../asserts/images/logo_E.png" alt="Foto" id="usuario_img">
                     <input type="button" value="Bater Ponto" id="bater_ponto">
-                    <input type="button" value="Historico" id="btn_modal">
+                    <input type="button" value="Histórico" id="btn_modal">
                 </form>
                 <aside id="conteiner_table">
 
